@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Roboto", sans-serif;
+    font-size: 1rem;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    flex: 0 0 auto;
+}
+
+main {
+    flex: 1 0 auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+main .container,
+.row {
+    flex: 1 0 auto;
+    margin-bottom: 0;
+}
+
+.card {
+    margin-bottom: 0;
+}
+
+main h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+main p {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+main button {
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    background-color: #0d6efd;
+    color: #fff;
+}
+
+main iframe {
+    width: 100%;
+    max-width: 100%;
+}
+
+main img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cont-formulario {
+    max-width: 900px;
+    margin: auto;
+}
+
+.formulario {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.datos-cliente {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.boton-r {
+    background-color: red;
+    color: white;
+    padding: 12px 22px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.boton-v {
+    background-color: #008f00;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px;
+    border: #dbfff3;
+}
+
+.comp-exito {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 30px #00000033;
+    width: 350px;
+    margin: 40px auto;
+}
+
+.icono {
+    font-size: 100px;
+    color: #000000;
+}
+
+.marca {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card-marca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    background-color: #f9f9f9;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 2px 5px #0000001a;
+    color: #333;
+}
+
+.card-marca img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+footer.footer {
+    flex: 0 0 auto;
+    background-color: #1a1a1a;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.4;
+    padding: 10px 20px;
+    margin: 0;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.footer-about h3 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+.footer-about p {
+    margin: 0;
+    font-size: 13px;
+}
+
+.footer-contact h4 {
+    margin-bottom: 5px;
+}
+
+.footer-contact p {
+    margin: 0 0 5px 0;
+}
+
+.socials a {
+    margin-right: 8px;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.875rem;
+}
+
+.oferta {
+    background-color: #ff0d0d;
+    color: white;
+    padding: 4px 10px;
+    border-radius: 15px;
+    width: fit-content;
+}
+
+.btn {
+    background-color: #ff0d0d;
+    color: white;
+}
+
+select.color {
+    padding: 4px 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+@media (min-width: 1024px) {
+    html {
+        font-size: 18px;
+    }
+
+    main {
+        padding: 2rem;
+        text-align: left;
+    }
+
+    main h2 {
+        font-size: 2rem;
+    }
+
+    main p {
+        font-size: 1.125rem;
+        margin-bottom: 1rem;
+    }
+
+    main button {
+        font-size: 1.125rem;
+        padding: 1rem 1.5rem;
+    }
+
+    main iframe {
+        height: 400px;
+    }
+
+    .marca {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
